@@ -1,0 +1,24 @@
+commerce_checkout.commerce_checkout_pane.coupon_redemption:
+  type: commerce_checkout_pane_configuration
+  mapping:
+    title:
+      type: string
+      label: 'Element title'
+    code_title:
+      type: string
+      label: 'Code title'
+    description:
+      type: string
+      label: 'Element description'
+    submit_title:
+      type: string
+      label: 'Submit button title'
+    submit_message:
+      type: string
+      label: 'Submit message'
+    remove_title:
+      type: string
+      label: 'Remove button title'
+    multiple_coupons:
+      type: boolean
+      label: 'Allow multiple coupons'
