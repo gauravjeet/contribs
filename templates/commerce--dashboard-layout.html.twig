@@ -12,12 +12,23 @@
   </div>
 
   {% for group in groups %}
-    <h2>{{ group.title }}</h2>
-    {% for item in group %}
-      <div class="box {{ item.class }}">
-        <a href="{{ item.url.toString }}">{{ item.title }}</a>
-        <div>{{ item.description }}</div>
+    <div class="commerce-dashboard__group">
+      <h2 class="commerce-dashboard__group-title" aria-label="{{ group.title }}">
+        {{ group.title }}
+      </h2>
+      <div class="commerce-dashboard__items">
+        {% for item in group %}
+          <a
+            href="{{ item.url.toString }}"
+            class="commerce-dashboard__item commerce-dashboard__item--{{ item.class }}"
+            aria-label="{{ item.title }}"
+            >
+            <div class="commerce-dashboard__item-icon"></div>
+            <h3 class="commerce-dashboard__item-title">{{ item.title }}</h3>
+            <div class="commerce-dashboard__item-description">{{ item.description }}</div>
+          </a>
+        {% endfor %}
       </div>
-    {% endfor %}
+    </div>
   {% endfor %}
 </div>
