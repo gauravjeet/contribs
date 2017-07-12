@@ -241,6 +241,10 @@ function commerce_theme_suggestions_admin_block_content_alter(&$suggestions, $va
  * TODO:Reorder groups according to their weights.
  */
 function template_preprocess_commerce__dashboard_layout(&$vars) {
+  // Attach dashboard libraries.
+  $vars['#attached']['library'][] = 'commerce/dashboard';
+
+  // Create groups.
   $items = $vars['content'];
   $groups = [];
 

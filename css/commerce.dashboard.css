@@ -1,0 +1,9 @@
+/**
+ * @file
+ * Commerce dashboard styling.
+ */
+
+/* Note. */
+a .commerce-dashboard__item-description {
+  color: red;
+}

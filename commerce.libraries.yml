@@ -8,3 +8,11 @@ toolbar:
   css:
     theme:
       css/commerce.icons.css: {}
+
+dashboard:
+  version: VERSION
+  js:
+      js/dashboard.js: {}
+  css:
+    theme:
+      css/commerce.dashboard.css: {}
